@@ -11,7 +11,7 @@
 }
 
 .deckblatt {
-  height: 350vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,14 +23,14 @@
 }
 
 .title {
-  font-size: 12rem;
+  font-size: 9rem;
   color: #ff3030;
 }
 
 .vorspeisen-wrapper {
   color: var(--text-color);
-  margin: 3rem 0;
-  padding: 2rem 0;
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.8),
@@ -44,8 +44,8 @@
 
 .heading {
   color: var(--heading-color);
-  font-size: 8rem;
-  margin-top: 15rem;
+  font-size: 6rem;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -56,9 +56,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 15rem;
+  margin-top: 5rem;
   font-size: 3rem;
-  gap: 15rem;
+  gap: 18rem;
 }
 
 .explanation {
@@ -67,7 +67,6 @@
 }
 
 .pasta-wrapper {
-  height: 300vh;
   color: var(--text-color);
   margin: 3rem 0;
   padding: 2rem 0;
@@ -83,7 +82,6 @@
 }
 
 .hauptgerichte-wrapper {
-  height: 260vh;
   color: var(--text-color);
   margin: 3rem 0;
   padding: 2rem 0;
@@ -99,7 +97,6 @@
 }
 
 .pizza-wrapper {
-  height: 250vh;
   color: var(--text-color);
   margin: 3rem 0;
   padding: 2rem 0;
@@ -115,7 +112,6 @@
 }
 
 .desserts-wrapper {
-  height: 250vh;
   color: var(--text-color);
   margin: 3rem 0;
   padding: 2rem 0;
@@ -131,10 +127,9 @@
 }
 
 .getränke-wrapper {
-  height: 420vh;
   color: var(--text-color);
   margin: 3rem 0;
-  padding: 2rem 0;
+  padding: 4rem 0;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.8),
@@ -146,7 +141,7 @@
   background-repeat: no-repeat;
 }
 .contact {
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-content: space-around;
@@ -179,24 +174,4 @@
   text-decoration: none;
   background-color: var(--primary-color);
   transition: all 0, 2s ease-in-out;
-}
-@media only screen and (min-width: 600px) {
-  .title {
-    font-size: 4rem;
-  }
-  .vorspeisen-wrapper {
-    margin: 1.5rem;
-    padding: 1rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .title {
-    font-size: 8rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .title {
-    font-size: 12rem;
-  }
 }
