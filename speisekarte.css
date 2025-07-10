@@ -5,17 +5,21 @@
   --text-color: #ddd;
   --heading-color: #0fc208;
 }
+@font-face {
+  font-family: inter;
+  src: url(Font/inter.ttf);
+}
 
 .body {
-  font-family: "inter.tff", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .deckblatt {
-  height: 200vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(Bilder/about-1.jpg);
+  background-image: url(Images/about-1.jpg);
   background-repeat: No-repeat;
   background-size: cover;
   background-position: center;
@@ -23,7 +27,7 @@
 }
 
 .title {
-  font-size: 9rem;
+  font-size: 8rem;
   color: #ff3030;
 }
 
@@ -36,7 +40,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/antipasti.jpg);
+    url(Images/antipasti.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +79,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/Pasta.jpg);
+    url(Images/Pasta.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +94,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/Wolfsbarsch.jpg);
+    url(Images/Wolfsbarsch.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,7 +109,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/Pizza.jpg);
+    url(Images/Pizza.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,7 +124,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/Tiramisu.jpg);
+    url(Images/Tiramisu.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,11 +139,12 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/wein.jpg);
+    url(Images/wein.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .contact {
   height: 150vh;
   display: flex;
@@ -159,7 +164,7 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(Bilder/Pizza.jpg);
+    url(Images/Pizza.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,4 +179,29 @@
   text-decoration: none;
   background-color: var(--primary-color);
   transition: all 0, 2s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dishes {
+    font-size: 1rem;
+    gap: 0.75rem;
+  }
+
+  .explanation {
+    font-size: 1rem;
+  }
+
+  .vorspeisen-wrapper {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
 }
